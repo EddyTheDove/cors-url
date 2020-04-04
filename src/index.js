@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 app.get('/', MainController.home)
 app.post('/stocks', MainController.stocks)
 app.post('/post', MainController.post)
-app.get('/post', MainController.get)
+app.post('/get', MainController.get)
 
 const port = process.env.PORT || 3000
 const server = app.listen(port, () => {
